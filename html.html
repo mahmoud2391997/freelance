@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effective AI Solutions for SMBs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: '#6a0dad',
+                        lightPurple: '#9c27b0',
+                        darkBlue: '#0d1b2a',
+                        lightGreen: '#8bc34a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 leading-relaxed">
+    <!-- Navigation Bar -->
+    <nav class="bg-darkBlue text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Replace with your logo -->
+                <img src="./logo.jpeg" alt="Logo" class="h-16 w-16 rounded-full">
+                <span class="text-xl font-bold">Effective AI Solutions</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#solutions" class="hover:text-[#73ACD8] transition">Solutions</a>
+                <a href="#about" class="hover:text-[#73ACD8] transition">About</a>
+                <a href="#testimonials" class="hover:text-[#73ACD8] transition">Testimonials</a>
+                <a href="#contact" class="hover:text-[#73ACD8] transition">Contact</a>
+                <a href="#schedule" class="bg-[#73ACD8] text-darkBlue px-4 py-2 rounded font-semibold hover:bg-green-500 transition">Schedule Call</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-darkBlue to-purple text-white py-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Effective AI Solutions</h1>
+        <p class="text-xl mb-6">Innovate • Intergrate • Excel</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 bg-[#020322] text-white">
+        <!-- AI Consulting Description -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold  mb-6">AI Consulting for Small & Medium Businesses</h2>
+                    <p class="text-lg mb-6">
+                        We specialize in helping SMBs harness the power of artificial intelligence to transform their operations, 
+                        enhance customer experiences, and drive growth. Our team of experts provides tailored AI solutions 
+                        that integrate seamlessly with your existing systems.
+                    </p>
+                    <p class="text-lg mb-6">
+                        From strategy development to implementation, we guide you through every step of your AI journey, 
+                        ensuring you get measurable results without the complexity.
+                    </p>
+                    <a href="#schedule" class="inline-block bg-[#73ACD8] text-darkBlue px-6 py-3 rounded-lg font-bold hover:bg-green-500 transition">
+                        Start Your AI Transformation
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="./image.avif" 
+                         alt="AI Consulting Services" 
+                         class="rounded-xl shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Owners Section -->
+        <section class="mb-16 ">
+            <h2 class="text-3xl font-bold text-purple mb-8 text-center">Meet Our Founder</h2>
+            <div class="flex justify-center items-center gap-8">
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img src="./ceo.avif" 
+                         alt="Founder 1" 
+                         class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-lightPurple">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">John Smith</h3>
+                    <p class="text-lightPurple font-semibold mb-4">CEO & AI Strategist</p>
+                    <p class="text-gray-700">
+                        With over 15 years in AI development, John leads our technical strategy and ensures our solutions 
+                        deliver real business value.
+                    </p>
+                </div>
+               
+        </section>
+
+        <!-- Digital Twin Section -->
+        <section class="mb-16 relative overflow-hidden rounded-xl min-h-[400px]">
+            <!-- Background with overlay -->
+            <div class="absolute inset-0 bg-[url('./clickme.avif')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-darkBlue/70 backdrop-blur-sm"></div>
+            
+            <div class="relative z-10 p-8 md:p-12 h-full">
+                <div class="flex flex-col md:flex-row items-center gap-8 h-full">
+                    <!-- Digital Twin Button with Animation -->
+                    <div class="md:w-1/2 flex justify-center">
+                        <button class="group relative w-64 h-64 bg-lightPurple rounded-full flex items-center justify-center text-white font-bold text-xl cursor-pointer hover:scale-105 transition-all duration-300 shadow-2xl">
+                            <div class="absolute inset-0 rounded-full border-4 border-white/30 group-hover:border-white/50 transition-all duration-500"></div>
+                            <div class="absolute inset-0 rounded-full animate-ping opacity-0 group-hover:opacity-20 bg-[#73ACD8] transition-opacity duration-300"></div>
+                            <span class="relative z-10 text-center px-4">Click on my<br>digital twin</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="md:w-1/2 text-white">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Experience Our AI Technology</h2>
+                        <p class="mb-6 text-lg leading-relaxed">
+                            Interact with our AI-powered digital twin to see how we can transform your business. Everything in this demo was generated by AI:
+                        </p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mt-1 mr-2 text-[#73ACD8] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Fully interactive digital twin</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mt-1 mr-2 text-[#73ACD8] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Cloned voice technology</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mt-1 mr-2 text-[#73ACD8] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>AI-generated scripts and content</span>
+                            </li>
+                        </ul>
+                        <div class="bg-[#73ACD8]/10 p-4 rounded-lg border-l-4 border-[#73ACD8]">
+                            <p class="italic">
+                                "A year ago AI was just a curiosity — now it's a full-blown Category 5 hurricane tearing the roof 
+                                off business, politics, and reality itself."
+                            </p>
+                            <p class="mt-2 font-semibold">- Matt Barrie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Solutions Section -->
+        <section id="solutions" class="mb-16">
+            <h2 class="text-3xl font-bold text-purple mb-8 text-center">Transformative AI Solutions</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Lead Generation</h3>
+                    <p class="text-gray-700">Data Privacy and Security</p>
+                </div>
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Customer Engagement</h3>
+                    <p class="text-gray-700">No Code Personalization</p>
+                </div>
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">24/7 Customer Support</h3>
+                    <p class="text-gray-700">Integrate With Existing Systems</p>
+                </div>
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Social Media Content</h3>
+                    <p class="text-gray-700">Easy to Use Management</p>
+                </div>
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">SEO Optimization</h3>
+                    <p class="text-gray-700">Easy to Implement</p>
+                </div>
+                <div class="bg-[#73ACD8] p-6 rounded-lg shadow-sm border-l-4 border-[#73ACD8]">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">HR Tools & Processes</h3>
+                    <p class="text-gray-700">Multilingual Support</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <h3 class="text-2xl font-bold  mb-4">Voice Agent Specialists</h3>
+                <a href="#" class="inline-block bg-purple text-white px-8 py-3 rounded-lg font-bold hover:bg-lightPurple transition">
+                    See Our Suite of Solutions
+                </a>
+            </div>
+        </section>
+
+        <!-- Business Needs Section -->
+        <section class="mb-16 bg-[#73ACD8] p-8 rounded-xl">
+            <h2 class="text-3xl font-bold text-darkBlue mb-6">For My Small- and Medium-Sized Business</h2>
+            <ul class="grid md:grid-cols-2 gap-4">
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">I want to transform my business</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Add revenue, decrease expenses, increase effectiveness and efficiency</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Meet and exceed customers' expectations</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Don't want to get behind competitors</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Solutions employees can use regardless of technical skills</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Solutions that integrate with existing systems</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Worried about data privacy and security</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-[#73ACD8] mr-2">✓</span>
+                    <span class=" text-gray-800">Need long-term strategy, not patchwork systems</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="mb-16 bg-lightPurple text-white p-8 rounded-xl">
+            <blockquote class="text-center italic text-xl">
+                "AI can have both fast and lasting impact for SMBs. Approximately 40% of SMBs using AI for less than six months 
+                have seen quick results, and that number jumps to 57% after one year."
+                <footer class="mt-4 not-italic font-bold">- Forbes</footer>
+            </blockquote>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Transform Your Business with AI?</h2>
+            <a href="#schedule" class="inline-block bg-[#73ACD8] text-darkBlue px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-500 transition">
+                Schedule a Free Consultation
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Effective AI Solutions</h3>
+                    <p>Empowering Businesses Through Intelligent AI Implementation</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-[#73ACD8] transition">About</a>
+                    <a href="#" class="hover:text-[#73ACD8] transition">Contact</a>
+                    <a href="#" class="hover:text-[#73ACD8] transition">FAQ</a>
+                    <a href="#" class="hover:text-[#73ACD8] transition">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p>Copyright © 2025 Effective AI Solutions. All rights reserved.</p>
+                <p class="text-gray-400 mt-2">Effective AI Solutions is a DBA of Acceleration Strategies, LLC.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <header>
+        <div class="logo">Effective AI Solutions</div>
+        <div class="tagline">Innovate • Implement • Excel</div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Effective AI Solutions for Small and Medium-sized Businesses</h1>
+            <p>Empowering Businesses Through Intelligent AI Implementation. From Strategy to Effective Solutions Using Agents, Automations and Chatbots.</p>
+            <div class="digital-twin">Click on my digital twin</div>
+            <p><em>Everything in this clip was generated by AI - my digital twin, my cloned voice, the script, the translations and the subtitles.</em></p>
+        </div>
+        <div class="hero-image">
+            <!-- Image placeholder for digital twin -->
+            <div style="width: 300px; height: 300px; background-color: var(--purple); border-radius: 10px;"></div>
+        </div>
+    </section>
+    
+    <section style="padding: 3rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2>Transformative AI Solutions</h2>
+        
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <h3>Lead Generation</h3>
+                <p>Data Privacy and Security</p>
+            </div>
+            <div class="solution-card">
+                <h3>Customer Engagement</h3>
+                <p>No Code Personalization</p>
+            </div>
+            <div class="solution-card">
+                <h3>24/7 Customer Support</h3>
+                <p>Integrate With Existing Systems</p>
+            </div>
+            <div class="solution-card">
+                <h3>Social Media Content and Management</h3>
+                <p>Easy to Use</p>
+            </div>
+            <div class="solution-card">
+                <h3>SEO</h3>
+                <p>Easy to Implement</p>
+            </div>
+            <div class="solution-card">
+                <h3>Human Resources Tools and Processes</h3>
+                <p>Multilingual</p>
+            </div>
+            <div class="solution-card">
+                <h3>Productivity Tools</h3>
+                <p>Reduce human errors</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3>Voice agent specialists</h3>
+            <a href="#" class="cta-button">See our suite of solutions here</a>
+        </div>
+        
+        <div class="testimonial">
+            <p>"A year ago AI was just a curiosity — now it's a full-blown Category 5 hurricane tearing the roof off business, politics, and reality itself." - Matt Barrie</p>
+        </div>
+        
+        <div class="business-needs">
+            <h2>For my small- and medium-sized business</h2>
+            <ul>
+                <li>I want to transform my business</li>
+                <li>add revenue, decrease expenses, increase effectiveness, and increase efficiency.</li>
+                <li>I want to meet and exceed my customers' expectations.</li>
+                <li>I don't want to get behind my competitors.</li>
+                <li>I want solutions that my employees can easily use, regardless of their technical skills.</li>
+                <li>I want solutions that integrate with my existing systems.</li>
+                <li>I'm worried about my data privacy and security.</li>
+                <li>I don't understand the technology - don't speak the language.</li>
+                <li>I need a long-term strategy, not just patchwork systems.</li>
+                <li>I'm worried about the constant change in AI. Every day seems to bring a new AI product.</li>
+            </ul>
+        </div>
+        
+        <div class="testimonial" style="background-color: var(--light-green); color: var(--dark-blue);">
+            <p>"AI can have both fast and lasting impact for SMBs. Approximately 40% of SMBs using AI for less than six months have seen quick results, and that number jumps to 57% after one year." - Forbes</p>
+        </div>
+        
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="#" class="cta-button" style="background-color: var(--purple); color: white;">Schedule a free call with Kit</a>
+        </div>
+        
+        <div style="text-align: center; margin: 2rem 0;">
+            <h3>Questions?</h3>
+            <p>Click on my picture and ask my digital twin anything about our products and services or about me, using either voice or text, or</p>
+            <p><a href="#">Go to my FAQ</a></p>
+            <p>And then schedule a free call with Kit</p>
+            <a href="#" class="cta-button">Schedule</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Kit</a>
+            <a href="#">Contact Kit</a>
+            <a href="#">AI Software License</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Ethics Policy</a>
+            <a href="#">Caution</a>
+        </div>
+        <p>Copyright 2025 Effective AI Solutions</p>
+        <p>Effective AI Solutions is a DBA of Acceleration Strategies, LLC.</p>
+    </footer>
+</body>
+</html>
